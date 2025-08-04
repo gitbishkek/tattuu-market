@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <title>Таттуу Маркет!</title>
+</head>
+<body>
+<!--begin Header-->
+<header class="header">
+    <div class="header__container">
+        <button class="header__burger-btn" id="burger">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-link">Таттуу Маркет</a>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="payment-and-delivery.html" class="menu__link">Оплата и доставка</a></li>
+                <li class="menu__item"><a href="wholesale.html" class="menu__link">Товары оптом</a></li>
+                <li class="menu__item"><a href="useful.html" class="menu__link">Полезное</a></li>
+                <li class="menu__item"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                <li class="menu__item"><a href="about-us.html" class="menu__link">О нас</a></li>
+            </ul>
+        </nav>
+        <div class="header__cart">
+            <div class="header__cart-container" onclick="location.href='cart.html'">
+                <span class="header__cart-count header__cart--count">0</span>
+                <i id='cart' class="ri-shopping-cart-2-fill cart"></i>
+            </div>
+        </div>
+    </div>
+</header>
+<!--end Header-->
+
+<!--begin Main-->
+<main class="main">
+    <div class="container">
+        <div class="main__wrap">
+            <div class="main__product">
+                <img class="main__product-img" src="assets/images/finiki-adgva.jpg" alt="Финики Аджва">
+                <h3 class="main__product-title">Финики Аджва</h3>
+                <p class="main__product-description">Это один из самых ценных и редких сортов фиников, произрастающий преимущественно в Саудовской Аравии, особенно в окрестностях города Медина.</p>
+                <div class="main__product-sell">
+                    <p class="main__product-price">6000 сом / 68$ (кг)</p>
+                    <div class="btn-row">
+                        <button class="btn" onclick="removeFromCart(products['dates-adjva'])" type="button">-</button>
+                        <p id="dates-adjva-cart" class="bold">0</p>
+                        <button class="btn" onclick="addToCart(products['dates-adjva'])" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__product">
+                <img class="main__product-img" src="assets/images/injir.webp" alt="Инжир вяленный">
+                <h3 class="main__product-title">Инжир вяленный</h3>
+                <p class="main__product-description">Это натуральный сушёный плод фигового дерева, сохранивший большинство полезных веществ свежего инжира.</p>
+                <div class="main__product-sell">
+                    <p class="main__product-price">400 сом / 4.5$ (кг)</p>
+                    <div class="btn-row">
+                        <button onclick="removeFromCart(products['fig'])" class="btn" type="button">-</button>
+                        <p id="fig-cart" class="bold">0</p>
+                        <button onclick="addToCart(products['fig'])" class="btn" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__product">
+                <img class="main__product-img" src="assets/images/greckiy-oreh.jpg" alt="Грецкий орех">
+                <h3 class="main__product-title">Грецкий орех</h3>
+                <p class="main__product-description">Это питательный и ценнейший орех с характерной морщинистой формой ядра и тонкой, но прочной скорлупой.</p>
+                <div class="main__product-sell">
+                    <p class="main__product-price">250 сом / 2.8$ (кг)</p>
+                    <div class="btn-row">
+                        <button onclick="removeFromCart(products['walnuts'])" class="btn" type="button">-</button>
+                        <p id="walnuts-cart" class="bold">0</p>
+                        <button onclick="addToCart(products['walnuts'])" class="btn" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__product">
+                <img class="main__product-img" src="assets/images/med.jpeg" alt="Мёд">
+                <h3 class="main__product-title">Мёд</h3>
+                <p class="main__product-description">Это натуральный сладкий продукт, производимый пчёлами из нектара цветущих растений.</p>
+                <div class="main__product-sell">
+                    <p class="main__product-price">500 сом / 6.7$ (кг)</p>
+                    <div class="btn-row">
+                        <button onclick="removeFromCart(products['honey'])" class="btn" type="button">-</button>
+                        <p id="honey-cart" class="bold">0</p>
+                        <button onclick="addToCart(products['honey'])" class="btn" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__product">
+                <img class="main__product-img" src="assets/images/arahis.jpg" alt="Арахис (Жер жангак)">
+                <h3 class="main__product-title">Арахис (Жер жангак)</h3>
+                <p class="main__product-description">Это популярный орехообразный боб, выращиваемый в тёплых климатах и часто называемый «земляным орехом».</p>
+                <div class="main__product-sell">
+                    <p class="main__product-price">250 сом / 2.8$ (кг)</p>
+                    <div class="btn-row">
+                        <button onclick="removeFromCart(products['peanut'])" class="btn" type="button">-</button>
+                        <p id="peanut-cart" class="bold">0</p>
+                        <button onclick="addToCart(products['peanut'])" class="btn" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__product">
+                <img class="main__product-img" src="assets/images/finiki-medjul.webp" alt="Финики Королевские 'Меджул'">
+                <h3 class="main__product-title">Финики Королевские "Меджул"</h3>
+                <p class="main__product-description">эта финики королевского сорта «Меджул» (Medjool)</p>
+                <div class="main__product-sell">
+                    <p class="main__product-price">1500 сом / 17.15$ (кг)</p>
+                    <div class="btn-row">
+                        <button onclick="removeFromCart(products['dates-medjul'])" class="btn" type="button">-</button>
+                        <p id="dates-medjul-cart" class="bold">0</p>
+                        <button onclick="addToCart(products['dates-medjul'])" class="btn" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--end Main-->
+
+<!--begin Footer-->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__wrap">
+            <div class="footer__contact">
+                <h3>Свяжитесь с нами:</h3>
+                <ul>
+                    <li>Телефон: +996 509 979 888</li>
+                    <li>aziz998899@gmail.com</li>
+
+                </ul>
+            </div>
+            <div class="footer__regulations">
+                <h3>Регламент</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__payment">
+            <h3>Мы принимаем к оплате</h3>
+            <div class="footer__payment-methods">
+                <img class="logo" src="assets/images/Visa_Inc._logo.svg" alt="Visa">
+                <img class="logo" src="assets/images/MasterCard_.svg" alt="MasterCard">
+                <img class="logo" src="assets/images/Maestro_.svg" alt="Maestro">
+                <img class="logo" src="assets/images/MegaPay-512h-svg.svg" alt="Megapay">
+                <img class="logo" src="assets/images/MBank_.svg" alt="MBank">
+            </div>
+        </div>
+    </div>
+    <span class="copyright">© 2025 Нестро Групп. Все права защищены.</span>
+</footer>
+<!--end footer-->
+<script src="assets/js/general.js"></script>
+<script src="assets/js/cart.js"></script>
+</body>
+</html>

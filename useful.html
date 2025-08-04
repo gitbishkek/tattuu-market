@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <title>Таттуу Маркет!</title>
+</head>
+<body>
+<!--begin Header-->
+<header class="header">
+    <div class="header__container">
+        <button class="header__burger-btn" id="burger">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-link">Таттуу Маркет</a>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="payment-and-delivery.html" class="menu__link">Оплата и доставка</a></li>
+                <li class="menu__item"><a href="wholesale.html" class="menu__link">Товары оптом</a></li>
+                <li class="menu__item"><a href="useful.html" class="menu__link active">Полезное</a></li>
+                <li class="menu__item"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                <li class="menu__item"><a href="about-us.html" class="menu__link">О нас</a></li>
+            </ul>
+        </nav>
+        <div class="header__cart">
+            <div class="header__cart-container" onclick="location.href='cart.html'">
+                <span class="header__cart-count header__cart--count">0</span>
+                <i id='cart' class="ri-shopping-cart-2-fill cart"></i>
+            </div>
+        </div>
+    </div>
+</header>
+<!--end Header-->
+
+<!--begin Main-->
+<main class="useful-page">
+    <div class="container">
+        <!-- Hero-секция -->
+        <section class="useful-hero">
+            <div class="useful-hero__content">
+                <h1 class="useful-hero__title">Полезное о сухофруктах</h1>
+                <div class="useful-hero__text">
+                    <p>Сухофрукты — это натуральный и удобный источник витаминов и энергии.</p>
+                    <p>Сухофрукты — это не только вкусный перекус, но и источник натуральных витаминов, минералов и клетчатки. Они помогают поддерживать иммунитет, уровень энергии и хорошее пищеварение.</p>
+                </div>
+            </div>
+            <div class="useful-hero__image">
+                <img src="assets/images/banner-right-image.png" alt="Разнообразие сухофруктов">
+            </div>
+        </section>
+
+        <!-- Информационные блоки -->
+        <section class="useful-info">
+            <!-- Блок 1 -->
+            <article class="useful-card useful-card--benefits">
+                <div class="useful-card__icon"><i class="ri-service-line"></i></div>
+                <h2 class="useful-card__title">Чем полезны сухофрукты:</h2>
+                <ul class="useful-card__list">
+                    <li class="useful-card__item">Богаты клетчаткой, улучшают пищеварение</li>
+                    <li class="useful-card__item">Содержат витамины <span class="vitamin">A</span>, <span class="vitamin">C</span>, группы <span class="vitamin">B</span>, а также минералы — железо, калий, магний</li>
+                    <li class="useful-card__item">Быстро утоляют голод и дают заряд энергии без тяжести</li>
+                    <li class="useful-card__item">Не содержат добавленного сахара (при выборе натуральных сортов без обработки)</li>
+                </ul>
+            </article>
+
+            <!-- Блок 2 -->
+            <article class="useful-card useful-card--popular">
+                <div class="useful-card__icon"><i class="ri-global-line"></i></div>
+                <h2 class="useful-card__title">Популярные сухофрукты:</h2>
+                <ul class="useful-card__list">
+                    <li class="useful-card__item"><strong>Курага</strong> — полезна для сердца и сосудов</li>
+                    <li class="useful-card__item"><strong>Чернослив</strong> — мягкое очищение организма</li>
+                    <li class="useful-card__item"><strong>Финики</strong> — источник быстрой энергии</li>
+                    <li class="useful-card__item"><strong>Изюм</strong> — поддержка иммунитета и отличная альтернатива сладкому</li>
+                    <li class="useful-card__item"><strong>Инжир</strong> — богат кальцием, помогает при усталости</li>
+                </ul>
+            </article>
+
+            <!-- Блок 3 -->
+            <article class="useful-card useful-card--about">
+                <div class="useful-card__icon"><i class="ri-git-repository-line"></i></div>
+                <h2 class="useful-card__title">В этом разделе мы делимся:</h2>
+                <ul class="useful-card__list">
+                    <li class="useful-card__item">Свойствами разных видов сухофруктов</li>
+                    <li class="useful-card__item">Правилами хранения и употребления</li>
+                    <li class="useful-card__item">Рецептами с использованием сухофруктов</li>
+                    <li class="useful-card__item">Советами по здоровому питанию</li>
+                </ul>
+                <p class="useful-card__footer">Следите за обновлениями — мы регулярно публикуем советы, рецепты и интересные факты!</p>
+            </article>
+        </section>
+    </div>
+</main>
+<!--end Main-->
+
+<!--begin Footer-->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__wrap">
+            <div class="footer__contact">
+                <h3>Свяжитесь с нами:</h3>
+                <ul>
+                    <li>Телефон: +996 509 979 888</li>
+                    <li>aziz998899@gmail.com</li>
+
+                </ul>
+            </div>
+            <div class="footer__regulations">
+                <h3>Регламент</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__payment">
+            <h3>Мы принимаем к оплате</h3>
+            <div class="footer__payment-methods">
+                <img class="logo" src="assets/images/Visa_Inc._logo.svg" alt="Visa">
+                <img class="logo" src="assets/images/MasterCard_.svg" alt="MasterCard">
+                <img class="logo" src="assets/images/Maestro_.svg" alt="Maestro">
+                <img class="logo" src="assets/images/MegaPay-512h-svg.svg" alt="Megapay">
+                <img class="logo" src="assets/images/MBank_.svg" alt="MBank">
+            </div>
+        </div>
+    </div>
+    <span class="copyright">© 2025 Нестро Групп. Все права защищены.</span>
+</footer>
+<!--end footer-->
+<script src="assets/js/general.js"></script>
+<script src="assets/js/cart.js"></script>
+</body>
+</html>

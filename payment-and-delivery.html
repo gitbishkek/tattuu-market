@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <title>Таттуу Маркет!</title>
+</head>
+<body>
+<!--begin Header-->
+<header class="header">
+    <div class="header__container">
+        <button class="header__burger-btn" id="burger">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-link">Таттуу Маркет</a>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="payment-and-delivery.html" class="menu__link active">Оплата и доставка</a></li>
+                <li class="menu__item"><a href="wholesale.html" class="menu__link">Товары оптом</a></li>
+                <li class="menu__item"><a href="useful.html" class="menu__link">Полезное</a></li>
+                <li class="menu__item"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                <li class="menu__item"><a href="about-us.html" class="menu__link">О нас</a></li>
+            </ul>
+        </nav>
+        <div class="header__cart">
+            <div class="header__cart-container" onclick="location.href='cart.html'">
+                <span class="header__cart-count header__cart--count">0</span>
+                <i id='cart' class="ri-shopping-cart-2-fill cart"></i>
+            </div>
+        </div>
+    </div>
+</header>
+<!--end Header-->
+
+<!--begin Main-->
+<main class="delivery">
+    <div class="container">
+        <!-- Hero секция -->
+        <div class="delivery__hero">
+            <div class="delivery__hero-content">
+                <h1 class="delivery__title">Международная доставка без границ</h1>
+                <p class="delivery__text">Ваш заказ будет оперативно доставлен в любую точку мира. Мы сотрудничаем с ведущими транспортными компаниями, чтобы гарантировать безопасность и своевременность поставок.</p>
+            </div>
+            <div class="delivery__hero-image">
+                <img src="assets/images/delivery.png" alt="Международная доставка">
+            </div>
+        </div>
+
+        <!-- Блок стоимости -->
+        <div class="delivery__section">
+            <h2 class="delivery__section-title">Стоимость пересылки</h2>
+            <div class="delivery__columns">
+                <div class="delivery__column">
+                    <h3 class="delivery__column-title">Цена формируется на основе:</h3>
+                    <ul class="delivery__list">
+                        <li class="delivery__list-item">Веса и габаритов груза</li>
+                        <li class="delivery__list-item">Выбранного способа доставки (авиа/море/наземный транспорт)</li>
+                        <li class="delivery__list-item">Таможенных особенностей страны</li>
+                    </ul>
+                </div>
+                <div class="delivery__column">
+                    <h3 class="delivery__column-title">Сроки доставки:</h3>
+                    <ul class="delivery__list">
+                        <li class="delivery__list-item">Страны СНГ: 5–10 рабочих дней</li>
+                        <li class="delivery__list-item">Европа, Азия, США и другие регионы: 7–21 день</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок оплаты -->
+        <div class="delivery__section delivery__section--payment">
+            <div class="delivery__payment">
+                <div class="delivery__payment-image">
+                    <img src="assets/images/payments-bg.png" alt="Способы оплаты">
+                </div>
+                <div class="delivery__payment-content">
+                    <h2 class="delivery__payment-title">Мы предлагаем удобные и безопасные способы оплаты:</h2>
+                    <ul class="delivery__list">
+                        <li class="delivery__list-item">Банковские карты: Visa, MasterCard, Maestro</li>
+                        <li class="delivery__list-item">Онлайн-кошельки: MegaPay, Mbank</li>
+                        <li class="delivery__list-item">Банковский перевод — по запросу</li>
+                    </ul>
+                    <p class="delivery__note">Все платежи проходят через защищённые платёжные шлюзы.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--end Main-->
+
+<!--begin Footer-->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__wrap">
+            <div class="footer__contact">
+                <h3>Свяжитесь с нами:</h3>
+                <ul>
+                    <li>Телефон: +996 509 979 888</li>
+                    <li>aziz998899@gmail.com</li>
+
+                </ul>
+            </div>
+            <div class="footer__regulations">
+                <h3>Регламент</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__payment">
+            <h3>Мы принимаем к оплате</h3>
+            <div class="footer__payment-methods">
+                <img class="logo" src="assets/images/Visa_Inc._logo.svg" alt="Visa">
+                <img class="logo" src="assets/images/MasterCard_.svg" alt="MasterCard">
+                <img class="logo" src="assets/images/Maestro_.svg" alt="Maestro">
+                <img class="logo" src="assets/images/MegaPay-512h-svg.svg" alt="Megapay">
+                <img class="logo" src="assets/images/MBank_.svg" alt="MBank">
+            </div>
+        </div>
+    </div>
+    <span class="copyright">© 2025 Нестро Групп. Все права защищены.</span>
+</footer>
+<!--end footer-->
+<script src="assets/js/general.js"></script>
+<script src="assets/js/cart.js"></script>
+</body>
+</html>

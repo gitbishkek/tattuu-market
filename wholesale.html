@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <title>Таттуу Маркет!</title>
+</head>
+<body>
+<!--begin Header-->
+<header class="header">
+    <div class="header__container">
+        <button class="header__burger-btn" id="burger">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-link">Таттуу Маркет</a>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="payment-and-delivery.html" class="menu__link">Оплата и доставка</a></li>
+                <li class="menu__item"><a href="wholesale.html" class="menu__link active">Товары оптом</a></li>
+                <li class="menu__item"><a href="useful.html" class="menu__link">Полезное</a></li>
+                <li class="menu__item"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                <li class="menu__item"><a href="about-us.html" class="menu__link">О нас</a></li>
+            </ul>
+        </nav>
+        <div class="header__cart">
+            <div class="header__cart-container" onclick="location.href='cart.html'">
+                <span class="header__cart-count header__cart--count">0</span>
+                <i id='cart' class="ri-shopping-cart-2-fill cart"></i>
+            </div>
+        </div>
+    </div>
+</header>
+<!--end Header-->
+
+<!--begin Main-->
+<main class="wholesale">
+    <div class="wholesale__header">
+        <h1 class="wholesale__title">Товары оптом</h1>
+        <p class="wholesale__intro">Все товары, представленные в нашем каталоге, доступны для покупки по оптовым ценам.</p>
+    </div>
+
+    <div class="wholesale__contact-banner">
+        <div class="contact-banner__content">
+            <p class="contact-banner__text">Уточняйте подробности по телефону или email</p>
+            <div class="contact-banner__links">
+                <a href="tel:+996509979888" class="contact-banner__link">
+                    <i class="fas fa-phone-alt"></i> +996 509 979 888
+                </a>
+                <a href="mailto:aziz998899aziz@gmail.com" class="contact-banner__link">
+                    <i class="fas fa-envelope"></i> aziz998899aziz@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wholesale__delivery">
+        <p>Доставка осуществляется по всему миру</p>
+    </div>
+
+    <div class="wholesale__content">
+        <div class="wholesale__benefits">
+            <h2 class="wholesale__subtitle">Условия оптового сотрудничества:</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">
+                        <i class="ri-price-tag-3-line"></i>
+                    </div>
+                    <h3 class="benefit-card__title">Гибкие цены</h3>
+                    <p class="benefit-card__text">Специальные условия при больших объёмах</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">
+                        <i class="ri-speed-up-line"></i>
+                    </div>
+                    <h3 class="benefit-card__title">Быстрая отгрузка</h3>
+                    <p class="benefit-card__text">Поддержка логистики и документооборота</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <h3 class="benefit-card__title">Персональный подход</h3>
+                    <p class="benefit-card__text">Индивидуальные условия для каждого клиента</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wholesale__order-steps">
+            <h2 class="wholesale__subtitle">Как оформить оптовый заказ:</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step__number">1</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Отправьте заявку</h3>
+                        <p class="step__text">Через форму на сайте или на email</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">2</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Получите прайс-лист</h3>
+                        <p class="step__text">И условия сотрудничества</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">3</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Согласуйте детали</h3>
+                        <p class="step__text">Способ оплаты и доставки с менеджером</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--end Main-->
+
+<!--begin Footer-->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__wrap">
+            <div class="footer__contact">
+                <h3>Свяжитесь с нами:</h3>
+                <ul>
+                    <li>Телефон: +996 509 979 888</li>
+                    <li>aziz998899@gmail.com</li>
+
+                </ul>
+            </div>
+            <div class="footer__regulations">
+                <h3>Регламент</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__payment">
+            <h3>Мы принимаем к оплате</h3>
+            <div class="footer__payment-methods">
+                <img class="logo" src="assets/images/Visa_Inc._logo.svg" alt="Visa">
+                <img class="logo" src="assets/images/MasterCard_.svg" alt="MasterCard">
+                <img class="logo" src="assets/images/Maestro_.svg" alt="Maestro">
+                <img class="logo" src="assets/images/MegaPay-512h-svg.svg" alt="Megapay">
+                <img class="logo" src="assets/images/MBank_.svg" alt="MBank">
+            </div>
+        </div>
+    </div>
+    <span class="copyright">© 2025 Нестро Групп. Все права защищены.</span>
+</footer>
+<!--end footer-->
+<script src="assets/js/general.js"></script>
+<script src="assets/js/cart.js"></script>
+</body>
+</html>
