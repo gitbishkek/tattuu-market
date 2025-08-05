@@ -6,8 +6,15 @@ const products = {
     'walnuts': { id: 'walnuts', name: 'Грецкий орех', price: 250, dollar: 2.8, img: 'assets/images/greckiy-oreh.jpg' },
     'honey': { id: 'honey', name: 'Мёд', price: 500, dollar: 6.7, img: 'assets/images/med.jpeg' },
     'peanut': { id: 'peanut', name: 'Арахис (Жер жангак)', price: 250, dollar: 2.8, img: 'assets/images/arahis.jpg' },
-    'dates-medjul': { id: 'dates-medjul', name: 'Финики Меджул', price: 1500, dollar: 17.5, img: 'assets/images/finiki-medjul.webp' }
+    'dates-medjul': { id: 'dates-medjul', name: 'Финики Меджул', price: 1500, dollar: 17.5, img: 'assets/images/finiki-medjul.webp' },
+    
+    // 🔽 Новые товары:
+    'cashew': { id: 'cashew', name: 'Кешью', price: 850, dollar: 9.5, img: 'assets/images/keshyu.jpg' },
+    'almond': { id: 'almond', name: 'Миндаль', price: 950, dollar: 10.7, img: 'assets/images/mindal.jpg' },
+    'kishmish': { id: 'kishmish', name: 'Изюм кишмиш', price: 350, dollar: 3.9, img: 'assets/images/kishmish.jpg' },
+    'salted-peanut': { id: 'salted-peanut', name: 'Соленый арахис', price: 280, dollar: 3.2, img: 'assets/images/arahis-soleniy.jpg' }
 };
+
 
 let cart = {};
 
