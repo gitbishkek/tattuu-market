@@ -9,7 +9,7 @@ const products = {
     'dates-medjul': { id: 'dates-medjul', name: 'Финики Меджул', price: 1500, dollar: 17.5, img: 'assets/images/finiki-medjul.webp' },
     
     // 🔽 Новые товары:
-    'cashew': { id: 'cashew', name: 'Кешью', price: 850, dollar: 9.5, img: 'assets/images/izjum-kishmish.jpg' },
+    'cashew': { id: 'cashew', name: 'Кешью', price: 850, dollar: 9.5, img: 'assets/images/keshu.webp' },
     'almond': { id: 'almond', name: 'Миндаль', price: 950, dollar: 10.7, img: 'assets/images/mendal.jpg' },
     'kishmish': { id: 'kishmish', name: 'Изюм кишмиш', price: 350, dollar: 3.9, img: 'assets/images/izjum-kishmish.jpg' },
     'salted-peanut': { id: 'salted-peanut', name: 'Соленый арахис', price: 280, dollar: 3.2, img: 'assets/images/naturalnyj-zharenyj-solenyj-arahis.webp' }
