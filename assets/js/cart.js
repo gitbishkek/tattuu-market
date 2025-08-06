@@ -130,7 +130,7 @@ function clearCart() {
 // Платёжная система
 function pay() {
     const phoneNumber = document.getElementById('phone-number').value;
-    if (phoneNumber) {
+    if (!phoneNumber) {
         alert('Пожалуйста, введите номер телефона');
         return;
     }
@@ -166,7 +166,7 @@ function pay() {
             order: String(Math.floor(Math.random() * 100000)),
             amount: totalAmount,
             currency: "KGS",
-            description: "Заказ из Таттуу Маркет",
+            description: "Описание заказа",
             expires_at: currentDate.toISOString(),
             options: {
                 callbacks: {
@@ -195,10 +195,10 @@ function pay() {
         }
     };
 
-    // Инициализация платёжного виджета
     const widget = new PayBox(paymentData);
     widget.create();
 }
+
 
 // Загрузка PayBox SDK
 (function(p, a, y, b, o, x) {
@@ -208,6 +208,7 @@ function pay() {
     o.src = 'https://cdn.freedompay.kg/widget/pbwidget.js?' + 1 * new Date();
     x.parentNode.insertBefore(o, x);
 })(document, 'script');
+
 
 // Инициализация при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
