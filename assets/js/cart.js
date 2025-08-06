@@ -130,10 +130,11 @@ function clearCart() {
 // Платёжная система
 function pay() {
     const phoneNumber = document.getElementById('phone-number').value;
-    if (phoneNumber) {
-        alert('Пожалуйста, введите номер телефона');
-        return;
-    }
+   if (!phoneNumber) {
+    alert('Пожалуйста, введите номер телефона');
+    return;
+}
+
 
     if (Object.keys(cart).length === 0) {
         alert('Корзина пуста. Нечего оплачивать!');
