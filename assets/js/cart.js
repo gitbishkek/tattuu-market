@@ -161,7 +161,7 @@ function pay() {
     const email = `order${Math.floor(Math.random() * 100000)}@tattuu-market.kg`;
 
     const paymentData = {
-        token: "v7W2AmRlQhtEmqUVgBcO1ym7FeLMOUgC",
+        token: "aP16qR8RWrBdokf3",
         payment: {
             order: String(Math.floor(Math.random() * 100000)),
             amount: totalAmount,
