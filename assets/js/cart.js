@@ -13,7 +13,6 @@ const products = {
     'almond': { id: 'almond', name: 'Миндаль', price: 900, dollar: 10.3, img: 'assets/images/mendal.jpg' },
     'kishmish': { id: 'kishmish', name: 'Изюм кишмиш', price: 850, dollar: 9.8, img: 'assets/images/izjum-kishmish.jpg' },
     'salted-peanut': { id: 'salted-peanut', name: 'Соленый арахис', price: 380, dollar: 4.4, img: 'assets/images/naturalnyj-zharenyj-solenyj-arahis.webp' },
-    'test': { id: 'test', name: 'Финики Меджул', price: 1, dollar: 0, img: 'assets/images/test.png' },
 };
 
 
